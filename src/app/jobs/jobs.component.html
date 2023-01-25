@@ -1,0 +1,6 @@
+
+<ul>
+    <ng-container *ngFor="let singleJob of jobs; let i=index">
+        <app-job (jobEmitter)="applications($event)" [job]="singleJob"></app-job>
+    </ng-container>
+</ul>
