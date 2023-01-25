@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 *{
   border-radius: 4px;
+  font-family: Roboto;
 }
 .wrap {
   position: relative;
@@ -81,4 +82,90 @@ position: relative;
   text-decoration: none;
 }
 
+
+.choice{
+  display: inline-flex;
+  color: #43A047;
+  
+}
+
+
+
+
+.rad-label {
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  
+  transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: rgba(35, 236, 55, 0.14);
+}
+
+.rad-input {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+
+  background: linear-gradient(to right bottom, hsl(152, 39%, 70%), hsl(144, 58%, 56%));
+  position: relative;
+}
+
+.rad-design::before {
+  content: '';
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(0);
+  transition: .3s;  
+  
+
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale();
+  
+}
+
+.rad-text {
+  color: hsl(0, 0%, 60%);
+  margin-left: 14px;
+  letter-spacing: 3px;
+ 
+  font-size: 13px;
+  font-weight: 900;
+
+  transition: .3s;
+  
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 0%);
+
+
+}
 
