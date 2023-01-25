@@ -1,7 +1,9 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 
-*{
+*{  border-radius: 6px;
+
     font-family:"Roboto", sans-serif;
 }
 .main{
@@ -11,9 +13,9 @@
 
 .wrap {
   position: relative;
-  width: 50%;
-  
-  
+  width: 500px;
+  margin: 5%;
+  margin-top: 0;
   
   
 }

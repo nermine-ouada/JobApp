@@ -1,8 +1,33 @@
-*{
-    border-radius: 4px;
-}
-  
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+*{  border-radius: 6px;
+
+    font-family:"Roboto", sans-serif;
+}
+.main{
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  position: relative;
+ width: 100%;
+  
+  
+}
+
+.bg {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+margin: 5px;
+}
 .content {
     position: relative;
    
