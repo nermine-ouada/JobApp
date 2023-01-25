@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { RegisterForm } from '../auth';
 import { AuthService } from '../auth.service';
 
@@ -13,11 +14,12 @@ export class RegisterComponent {
     password: '',
     confirm_password: ''
   };
-  constructor(private authService:AuthService) { }
+  constructor(private authService:AuthService, private router:Router) { }
 
   submit() {
   
   this.authService.register(this.form);
+
 }
 
   isApplicant:boolean=false;

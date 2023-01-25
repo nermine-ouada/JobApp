@@ -1,38 +1,35 @@
-<div class="wrap">
-    <img class="bg" src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/job-application-email.png
-    ">
-  
+<div class="main">
+  <div class="wrap">
+    <img class="bg"
+      src="https://media.istockphoto.com/id/1058045964/photo/topview-of-working-business-desktop.jpg?s=170667a&w=0&k=20&c=e0PGKuBZCgkhQn40UgXg_u9e3i0JwETS-UT2kf3ACzA="
+      alt="">
     <div class="content">
       <div class="full-page">
-        <div class="form">
-          <form class="register-form">
-            <input type="text" placeholder="email address" required />
-            <input type="password" placeholder="password" required />
-            <div style="display:inline-block;">
-  
-  
-  
-              <label class="rad-label">
-                <input type="radio" class="rad-input" name="job" required (click)="recruter()">
-                <div class="rad-design"></div>
-                <div class="rad-text">recruter</div>
-              </label>
-  
-  
-              <label class="rad-label">
-                <input type="radio" class="rad-input" name="job" (click)="applicant()">
-                <div class="rad-design"></div>
-                <div class="rad-text">applicant</div>
-              </label>
-  
-            </div>
-  
-            <button>create</button>
-            <p class="message">Not registered?
-              <a routerLink="/register">Sign Up</a>
-            </p>
-          </form>
-        </div>
+        <form (submit)="submit()" #LoginForm="ngForm">
+          <input type="email" id="email" name="email" placeholder="Email Address" [(ngModel)]="form.email"
+            #email="ngModel" required>
+
+          <input type="password" id="pwd" placeholder="Password" [(ngModel)]="form.password" name="password"
+            #password="ngModel" required>
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="job" required (click)="recruter()">
+            <div class="rad-design"></div>
+            <div class="rad-text">recruter</div>
+          </label>
+
+
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="job" (click)="applicant()">
+            <div class="rad-design"></div>
+            <div class="rad-text">applicant</div>
+          </label>
+
+          <button class="submit">login</button>
+          <p class="message">Not registered?
+            <a routerLink="/register">Create an account</a>
+          </p>
+        </form>
       </div>
     </div>
   </div>
+</div>

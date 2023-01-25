@@ -25,6 +25,15 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+li button{
+
+    display: block;
+  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ 
+}
 
 .auth:hover {
   background-color: white;
@@ -53,4 +62,7 @@ img {
 img:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   background-color: #7ccb7e;
+}
+button{
+  border-color: white;
 }

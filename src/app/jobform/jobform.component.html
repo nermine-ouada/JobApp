@@ -1,20 +1,30 @@
-<div class="content">
-    <div class="full-page">
-       <form (submit)="addJob()">
-          <input type="text" id="job" name="job" placeholder="enter position"
-             required>
- 
-          <input type="text" id="company"  name="company" 
-             placeholder="enter company" required>
- 
-          <input type="text" placeholder="enter field" id="field" name="field" 
-              required>
- 
- 
-          <input type="text" id="company" placeholder="enter company" name="company"  required>
- 
-          <input type="submit" class="submit" >
- 
-       </form>
+<div class="main">
+    <div class="wrap">
+        <img class="bg"
+            src="https://thumbs.dreamstime.com/b/top-view-worktable-accessories-business-flat-lay-background-copy-space-180807541.jpg"
+            alt="">
+        <div class="content">
+            <div class="full-page">
+                <form (submit)="addJob()" #JobForm="ngForm">
+                    <input type="text" id="job" [(ngModel)]="form.job" name="job" #job="ngModel"
+                        placeholder="enter position" required>
+
+                    <input type="text" id="company" [(ngModel)]="form.company" name="company" #company="ngModel"
+                        placeholder="enter company" required>
+
+                    <input type="text" placeholder="enter field" id="field" name="field" [(ngModel)]="form.field"
+                        #field="ngModel" required>
+
+
+                    <input type="text" id="company" placeholder="enter logo" name="company" [(ngModel)]="form.logo"
+                        #company="ngModel" required>
+
+
+
+                    <input type="submit" class="submit" [disabled]="JobForm.form.invalid">
+
+                </form>
+            </div>
+        </div>
     </div>
- </div>
+</div>

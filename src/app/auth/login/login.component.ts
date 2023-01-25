@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginForm } from '../auth';
 import { AuthService } from '../auth.service';
 
@@ -15,12 +16,14 @@ export class LoginComponent {
 
   };
 
-  constructor(private authService:AuthService ) {}
+  constructor(private authService:AuthService, private router:Router ) {}
 
 
 submit(){
   
   this.authService.login(this.form);
+  this.router.navigate([]);
+  return this.isApplicant
   }
 
 
