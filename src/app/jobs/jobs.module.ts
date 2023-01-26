@@ -7,11 +7,11 @@ import { JobsService } from './jobs.service';
 
 
 @NgModule({
-  declarations: [JobsComponent,JobComponent],
+  declarations: [],
   imports: [
     CommonModule
   ],
-  exports:[JobsComponent],
+  exports:[],
   providers:[JobsService]
 })
 export class JobsModule { }

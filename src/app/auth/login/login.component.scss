@@ -40,7 +40,7 @@ margin: 5px;
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-    
+    padding-top: 0;
     
   }
   form {border-radius: 4px;
@@ -62,7 +62,7 @@ margin: 5px;
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 12px;
   }
   .submit {
     font-family: "Roboto", sans-serif;
@@ -103,8 +103,8 @@ background-color:rgb(33, 176, 33);
   font-family: "Roboto", sans-serif;
 
   border-radius: 100px;
-  padding: 14px 16px;
-  margin: 10px 0;
+  padding: 10px 20px;
+  margin: 5px 0;
 
   cursor: pointer;
   
@@ -161,7 +161,7 @@ background-color:rgb(33, 176, 33);
   margin-left: 14px;
   letter-spacing: 3px;
  
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 900;
 
   transition: .3s;
