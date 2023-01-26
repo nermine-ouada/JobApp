@@ -4,9 +4,9 @@
   <li style="float: right;"  *ngIf="!isAuthenticated() && !isLoggedIn" ><a class="auth" routerLink="/login">Login</a></li>
   <li style="float: right;" *ngIf="!isAuthenticated() && !isLoggedIn"><a class="auth" routerLink="/register" >Register</a></li>
   <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><button class="auth" id="logout" (click)="logout()">LogOut</button></li>
-  <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/jobform" >Job Form</a></li>
-  <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/profileform" >Profile Form</a></li>
-
+  <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/jobform" >Add Job</a></li>
+  <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/profileform" >Add Profile</a></li>
+  <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/jobs" >Jobs</a></li>
   <li style="float: right;" *ngIf="isAuthenticated() || isLoggedIn" ><a class="auth" routerLink="/profiles" >Profiles</a></li>
 
 

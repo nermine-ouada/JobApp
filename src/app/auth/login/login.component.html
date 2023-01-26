@@ -12,14 +12,14 @@
           <input type="password" id="pwd" placeholder="Password" [(ngModel)]="form.password" name="password"
             #password="ngModel" required>
           <label class="rad-label">
-            <input type="radio" class="rad-input" name="job" required (click)="recruter()">
+            <input type="radio" class="rad-input" name="job" required (click)="isRecruter()">
             <div class="rad-design"></div>
             <div class="rad-text">recruter</div>
           </label>
 
 
           <label class="rad-label">
-            <input type="radio" class="rad-input" name="job" (click)="applicant()">
+            <input type="radio" class="rad-input" name="job" (click)="isApplicant()" required>
             <div class="rad-design"></div>
             <div class="rad-text">applicant</div>
           </label>

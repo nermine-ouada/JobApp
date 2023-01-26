@@ -1,74 +1,86 @@
 {
   "job": [
     {
-      "id":1,
+      "id": 1,
       "job": "developper",
       "company": "ELYADATA",
       "field": "IT",
-      "logo":""
-    },
-    {
-      "id":2,
-      "job": "developper",
-      "company": "ELYADATA",
-      "field": "IT",
-      "logo":""
-    },{
-      "id":3,
-      "job": "developper",
-      "company": "ELYADATA",
-      "field": "IT",
-      "logo":""
-    },{
-      "id":5,
-      "job": "developper",
-      "company": "ELYADATA",
-      "field": "IT",
-      "logo":""
-    },{
-      "id":6,
-      "job": "developper",
-      "company": "ELYADATA",
-      "field": "IT",
-      "logo":""
-    },{
-      "id":7,
-      "job": "developper",
-      "company": "ELYADATA",
-      "field": "IT",
-      "logo":""
-    }
-  ],
-  "profile":[
-    {
-      "id":1,
-      "name":"name1",
-      "age":"25",
-      "degree":"degree1",
-      "email":"email1",
-      "resume":"resume1"
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
     },
     {
       "id": 2,
-      "name":"name1",
-  "age":"25",
-  "degree":"degree1",
-  "email":"email1",
-  "resume":"resume1"
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
     },
     {
-      "name":"name1",
-      "age":"25",
-      "degree":"degree1",
-      "email":"email1",
-      "resume":"resume1"
+      "id": 3,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
     },
     {
-      "name":"name1",
-      "age":"25",
-      "degree":"degree1",
-      "email":"email1",
-      "resume":"resume1"
+      "id": 5,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    },
+    {
+      "id": 6,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    },
+    {
+      "id": 7,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "hell",
+      "age": "25",
+      "degree": "degree1",
+      "email": "email1",
+      "resume": "resume1"
+    },
+    {
+      "id": 2,
+      "name": "name1",
+      "age": "25",
+      "degree": "degree1",
+      "email": "email1",
+      "resume": "resume1"
+    },
+    {
+      "name": "name1",
+      "age": "25",
+      "degree": "degree1",
+      "email": "email1",
+      "resume": "resume1"
+    },
+    {
+      "name": "name1",
+      "age": "25",
+      "degree": "degree1",
+      "email": "email1",
+      "resume": "resume1"
+    },
+    {
+      "name": "name3",
+      "age": "45",
+      "degree": "degree3",
+      "email": "kfjfjf",
+      "resume": "kfkfk",
+      "id": 3
     }
   ]
 }

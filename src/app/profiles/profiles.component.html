@@ -1,5 +1,5 @@
 <ul>
     <ng-container *ngFor="let singleProfile of profiles; let i=index">
-        <app-profile (profileEmitter)="recrutement($event)" [profile]="singleProfile"></app-profile>
+        <app-profile (updateProfileList)="getProfileList()" [profile]="singleProfile"></app-profile>
     </ng-container>
 </ul>

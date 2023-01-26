@@ -14,13 +14,13 @@
     </div>
     <div>
         <div>
-            <span> Resume Link :</span> {{profile.resume}}
+            <span> Resume Link :</span> <a href="{{profile.resume}}">{{profile.resume}}</a>
         </div>
 
-        <span> Email : </span> {{profile.email}}
+        <span> Email : </span> <a href="mailto: {{profile.email}}">{{profile.email}}</a>
     </div>
 
         <button (click)="recrutement()">Apply</button><br/>
-        <button (click)="recrutement()">Edit profile</button><br/>
-        <button (click)="recrutement()">Delete profile</button>
+        <button (click)="updateProfile()">Edit profile</button><br/>
+        <button (click)="deleteProfile()">Delete profile</button>
 </li>
