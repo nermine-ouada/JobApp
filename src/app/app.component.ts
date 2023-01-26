@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { AuthService } from './auth/auth.service';
-import { initializeApp } from 'firebase/app'
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from './firebase.config'
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -10,12 +13,12 @@ import { initializeApp } from 'firebase/app'
 export class AppComponent {
   isLoggedIn: boolean = false;
  
-  constructor(private authService: AuthService ) { }
+  constructor(private authService: AuthService, private router:Router ) { }
   ngOnInit(): void {
 
-   
+   this.router.navigate(['home'])
       this.isLoggedIn = localStorage.getItem('user') ? true : false;
-      initializeApp();
+      initializeApp(firebaseConfig);
 }
   
   isAuthenticated() {

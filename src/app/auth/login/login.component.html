@@ -5,7 +5,7 @@
       alt="">
     <div class="content">
       <div class="full-page">
-        <form (submit)="submit()" #LoginForm="ngForm">
+        <form #LoginForm="ngForm">
           <input type="email" id="email" name="email" placeholder="Email Address" [(ngModel)]="form.email"
             #email="ngModel" required>
 
@@ -24,7 +24,7 @@
             <div class="rad-text">applicant</div>
           </label>
 
-          <button class="submit">login</button>
+          <button class="submit" (click)="submit()">login</button>
           <p class="message">Not registered?
             <a routerLink="/register">Create an account</a>
           </p>
