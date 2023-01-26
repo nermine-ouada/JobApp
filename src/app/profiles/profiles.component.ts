@@ -7,17 +7,17 @@ import { Profile } from '../types/types';
   styleUrls: ['./profiles.component.scss']
 })
 export class ProfilesComponent /* implements OnInit*/ {
-  /* constructor(private jobsService:JobsService){}
+  /* constructor(private profilesService:ProfilesService){}
    ngOnInit(): void {
-     this.getJobList()
+     this.getProfileList()
    }
-     jobs:Job[]=[];
+     profiles:Profile[]=[];
    
      
    
-   getJobList(){
+   getProfileList(){
    
-     this.jobsService.getJobs().subscribe((jobs: any) => { this.jobs = jobs; })
+     this.ProfilesService.getProfiles().subscribe((profiles: any) => { this.profiless = profiles; })
    }*/
   profiles: Profile[] = [
     {
