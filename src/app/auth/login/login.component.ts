@@ -23,15 +23,9 @@ submit(){
   
   this.authService.login(this.form);
   }
-
-
-isApplicant:boolean=false;
-applicant(){
-  this.isApplicant=true;
-  
-}
-recruter(){
-  this.isApplicant=false;
-}
+  isApplicant(
+    
+  ){}
+  isRecruter(){}
 
 }
