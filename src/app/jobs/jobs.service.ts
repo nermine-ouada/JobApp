@@ -24,4 +24,8 @@ export class JobsService {
   deleteJob(id: number) {
     return this.http.delete(this.baseUrl + 'job/' +id );
   }
+  getJobById(id: number) {
+    return this.http.get(this.baseUrl+'job/'+id)
+  }
+
 }

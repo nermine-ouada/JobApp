@@ -6,25 +6,25 @@
         <div class="content">
             <div class="full-page">
                 <form (submit)="addJob()" #JobForm="ngForm">
-                    <input class="input" type="text" id="job" [(ngModel)]="form.job" name="job" #job="ngModel"
+                    <input type="text" id="job" [(ngModel)]="form.job" name="job" #job="ngModel"
                         placeholder="enter position" required>
 
-                    <input class="input" type="text" id="company" [(ngModel)]="form.company" name="company"
-                        #company="ngModel" placeholder="enter company" required>
+                    <input type="text" id="company" [(ngModel)]="form.company" name="company" #company="ngModel"
+                        placeholder="enter company" required>
 
+                    <input type="text" list="fields" placeholder="enter field" id="field" name="field"
+                        [(ngModel)]="form.field" #field="ngModel" required>
 
-
-                    <select class="input"  id="field" name="field" [(ngModel)]="form.field"
-                        #field="ngModel" required>
+                    <datalist id="fields">
                         <option>It Services</option>
                         <option>Education</option>
                         <option>Heath & Care</option>
                         <option>Managment</option>
                         <option>Architecture</option>
-                    </select>
 
+                    </datalist>
 
-                    <input class="input" type="text" id="company" placeholder="enter logo" name="company" [(ngModel)]="form.logo"
+                    <input type="text" id="company" placeholder="enter logo" name="company" [(ngModel)]="form.logo"
                         #company="ngModel" required>
 
 

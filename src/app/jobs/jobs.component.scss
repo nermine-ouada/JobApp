@@ -1,13 +1,10 @@
+*{
+    font-family: 'Roboto';
+    text-align: center;
+
+}
 ul{
     display: flex;
     flex-wrap: wrap;
-}
-li{
-    list-style-type: none;
-    margin: 2px;
-    border: solid;
-    width: 25%;
-    text-overflow: ellipsis;
-    text-align: center;
-
+    padding: 0;
 }
