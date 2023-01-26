@@ -5,21 +5,24 @@
 font-family: Roboto;
 }
 
+
 li{
-    list-style-type: none;
-    margin: 5px;
-    width: 200px;
-    text-overflow: ellipsis;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border-radius: 8px;
-    height:400px ;
-  }
+  list-style-type: none;
+  margin: 10px;
+  margin-bottom: 20px;
+
+  width: 175px;
+  text-overflow: ellipsis;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  height:400px ;
+}
 
 button
 {  text-transform: uppercase;
@@ -70,3 +73,17 @@ button
 text-decoration: underline;
 
   }
+  .edit{
+    background-color: rgb(233, 193, 118);
+  }
+  .edit:hover{
+    background-color: rgb(237, 161, 19);
+  color:#FFFFFF;
+  }
+.delete{
+  background-color: rgb(233, 170, 170)
+}
+.delete:hover{
+  background-color: rgb(193, 58, 58);
+  color:#FFFFFF;
+}

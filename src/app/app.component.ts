@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(private authService: AuthService, private router:Router ) { }
   ngOnInit(): void {
 
- this.router.navigate(['home'])
+/* this.router.navigate(['home'])*/
       this.isLoggedIn = localStorage.getItem('user') ? true : false;
       initializeApp(firebaseConfig);
 }
@@ -24,7 +24,10 @@ export class AppComponent {
   isAuthenticated() {
       return this.authService.isAuthenticated;
   }
-
+  isShowing:boolean=false;
+show(){
+  this.isShowing=!this.isShowing;
+}
   logout() {
       this.isLoggedIn = false;
       this.authService.logout();

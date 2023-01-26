@@ -1,5 +1,6 @@
+<h1>Job Offers</h1>
 <ul>
     <ng-container *ngFor="let singleJob of jobs; let i=index">
-        <app-job (jobEmitter)="applications($event)" [job]="singleJob"></app-job>
+        <app-job (updateJobList)="getJobList()" [job]="singleJob"></app-job>
     </ng-container>
 </ul>

@@ -51,6 +51,6 @@ updateProfile(){
       this.profileService.addProfile(this.form).subscribe();
      
     }
-    this.router.navigate(['']);
+    this.router.navigate(['profiles']);
   }
 }

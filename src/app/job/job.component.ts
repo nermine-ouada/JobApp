@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
+import { JobsService } from '../jobs/jobs.service';
 import { Job } from '../types/types';
 
 @Component({
@@ -9,15 +11,28 @@ import { Job } from '../types/types';
 })
 export class JobComponent {
 @Input() job:Job={} as Job;
-@Output()jobEmitter=new EventEmitter<Job>();
-
-constructor(private authservice:AuthService){
+@Output()updateJobList=new EventEmitter<null>();
+  
+constructor(private authservice:AuthService, private jobsService:JobsService, private router:Router){
 
 }
-isApplicant(){
+isRecruter(){
   return true
 }
-applications(){
-  this.jobEmitter.emit(this.job);
+application(){
+  this.updateJobList.emit();
+}
+updateJob(){
+  this.router.navigate(['jobform'],{queryParams:{ id:this.job.id}})
+  this.jobsService.updateJob(this.job)  }
+
+deleteJob(){
+  this.jobsService.deleteJob(this.job.id).subscribe(
+  data => {
+    this.updateJobList.emit();
+  }
+);
+
+
 }
 }

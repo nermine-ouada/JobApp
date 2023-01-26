@@ -1,58 +1,81 @@
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-*{
-font-family: Roboto;
+* {
+  font-family: Roboto;
 }
 
-li{
-    list-style-type: none;
-    margin: 5px;
-    width: 200px;
-    text-overflow: ellipsis;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border-radius: 8px;
-    height:300px ;
-  }
+li {
+  list-style-type: none;
+  margin: 10px;
+  margin-bottom: 20px;
 
-button
-{  text-transform: uppercase;
-    outline: 0;
-    background: #4CAF50;
-    width: 50%;
-    border-radius: 4px;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
-  button:hover{
-    color:#4CAF50;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 175px;
+  text-overflow: ellipsis;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  height: 350px;
+}
 
-  }
-  div{
-    margin: 5%;
-    text-overflow: ellipsis;
-    max-width: 180px;
-    
+button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 50%;
+  border-radius: 4px;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+button:hover {
+  color: #4caf50;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+div {
+  margin: 5%;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+span {
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+img {
+  width: 50px;
+}
+button {
+  margin: 5px;
 
-  }
-  span{
-    font-weight: bold;
-    text-overflow: ellipsis;
-
-  }
-  img{
-    width: 50px;
-  }
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.edit {
+  background-color: rgb(233, 193, 118);
+}
+.edit:hover {
+  background-color: rgb(237, 161, 19);
+  color: #ffffff;
+}
+.delete {
+  background-color: rgb(233, 170, 170);
+}
+.delete:hover {
+  background-color: rgb(193, 58, 58);
+  color: #ffffff;
+}

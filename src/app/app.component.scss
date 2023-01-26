@@ -63,11 +63,28 @@ img:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   background-color: #7ccb7e;
 }
+
 button{
   border-color: white;
+  background-color: #09a30e;
+  color: white;
+  border-radius: 20px;
+  float: right;
+  margin: 3px;
+  border-style: none;
+}
+button:hover{
+  background-color: white;
+
+  color: #0e9d13;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 #logout
 {
   background-color: #baf9bc;
   color: #09a30e;
+}
+#logout:hover{
+  color: #0e9d13;
+  background-color: white;
 }

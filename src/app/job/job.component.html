@@ -1,32 +1,24 @@
-
 <li>
-    <div>
-        <span> Field :</span> {{job.field}}
-    </div>
-    <div>
-        <span> Company :</span>  {{job.company}}
-    </div>
     <div>
         <img src="{{job.logo}}" alt="{{job.company}}">
     </div>
     <div>
+        <span> Company :</span> {{job.company}}
+    </div>
     <div>
-        <span> Position :</span>  {{job.job}}
+        <span> Field :</span> {{job.field}}
     </div>
-    
-        <span> Description :</span>  {{job.description}}
+
+
+    <div>
+        <span> Position :</span> {{job.job}}
     </div>
-    
-    <div *ngIf="isApplicant()" >
-        <button (click)="applications()">Apply</button>
+    <div>
+        <span> Description :</span> {{job.description}}
     </div>
-    
-    
-    <div *ngIf="!isApplicant()"  >
-        <button (click)="applications()">Edit Job</button>
-    </div>
-    <div *ngIf="!isApplicant()"  >
-        <button (click)="applications()">Delete Job</button>
-    </div>
+
+
+    <button (click)="application()">Apply</button><br />
+    <button class="edit" (click)="updateJob()">Edit profile</button><br />
+    <button class="delete" (click)="deleteJob()">Delete profile</button>
 </li>
-    
