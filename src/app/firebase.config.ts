@@ -4,13 +4,13 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDrZV0EudUmst-jBCwuuPmJmCqcSFLBYFw",
-  authDomain: "jobapp-2924b.firebaseapp.com",
-  projectId: "jobapp-2924b",
-  storageBucket: "jobapp-2924b.appspot.com",
-  messagingSenderId: "559336142073",
-  appId: "1:559336142073:web:dc3fb52e9aec79168b5e28"
+export const firebaseConfig = {
+  apiKey: "AIzaSyDA5YHfywGzMqF846N0xx1tz07Mb5SjGBU",
+  authDomain: "jobapp-49bbd.firebaseapp.com",
+  projectId: "jobapp-49bbd",
+  storageBucket: "jobapp-49bbd.appspot.com",
+  messagingSenderId: "355571173888",
+  appId: "1:355571173888:web:d6f76b88a26837d9e2e6e5"
 };
 
 // Initialize Firebase

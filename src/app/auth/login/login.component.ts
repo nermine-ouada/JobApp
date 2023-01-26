@@ -22,8 +22,6 @@ export class LoginComponent {
 submit(){
   
   this.authService.login(this.form);
-  this.router.navigate([]);
-  return this.isApplicant
   }
 
 

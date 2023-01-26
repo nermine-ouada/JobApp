@@ -26,13 +26,14 @@ export class AuthService {
         this.isAuthenticated = true;
         localStorage.setItem('user', JSON.stringify(userCredential))
         this.router.navigate(['']);
+        console.log("login")
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         this.isAuthenticated = false;
         alert('unseccsseful login')
-
+        console.log(" no login")
       })
   }
 
@@ -49,6 +50,8 @@ export class AuthService {
     createUserWithEmailAndPassword(auth, form.email, form.password)
       .then((userCredential) => {
         this.isAuthenticated = true;
+        this.router.navigate(['']);
+
       })
       .catch((error) => {
         this.isAuthenticated = false;
