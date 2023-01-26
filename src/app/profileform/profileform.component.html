@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="wrap">
+        <img class="bg"
+            src="https://img.freepik.com/premium-photo/office-blue-desk-equipment-working-top-view-flat-lay-blue-background_38937-393.jpg?w=2000jpg"
+            alt="">
+        <div class="content">
+            <div class="full-page">
+                <form (submit)="addProfile()" #ProfileForm="ngForm">
+                    <input type="text" id="job" [(ngModel)]="form.name" name="name" #name="ngModel"
+                        placeholder="enter full name" required>
+
+                    <input type="text" id="age" [(ngModel)]="form.age" name="age" #age="ngModel"
+                        placeholder="enter age" required>
+
+                    <input  type="text" placeholder="enter degree" id="degree" name="degree" [(ngModel)]="form.degree"
+                        #dgree="ngModel" required>
+                    
+
+                    <input type="text" id="email" placeholder="enter professional email" name="email" [(ngModel)]="form.email"
+                        #email="ngModel" required>
+
+                        <input type="text" id="resume" placeholder="enter resume link" name="resume" [(ngModel)]="form.resume"
+                        #resume="ngModel" required>
+
+                    <input type="submit" class="submit" [disabled]="ProfileForm.form.invalid">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

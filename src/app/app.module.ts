@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { JobformComponent } from './jobform/jobform.component';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfilesComponent } from './profiles/profiles.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileformComponent } from './profileform/profileform.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    JobformComponent
+    JobformComponent,
+    ProfilesComponent,
+    ProfileComponent,
+    ProfileformComponent
   ],
   imports: [
     BrowserModule,

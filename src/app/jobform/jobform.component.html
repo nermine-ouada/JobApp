@@ -12,9 +12,16 @@
                     <input type="text" id="company" [(ngModel)]="form.company" name="company" #company="ngModel"
                         placeholder="enter company" required>
 
-                    <input type="text" placeholder="enter field" id="field" name="field" [(ngModel)]="form.field"
+                    <input  type="text" list="fields" placeholder="enter field" id="field" name="field" [(ngModel)]="form.field"
                         #field="ngModel" required>
+                    <datalist id="fields">
+                        <option>It</option>
+                        <option>Education</option>
+                        <option>Heath & Care</option>
+                        <option>Managment</option>
+                        <option>Architecture</option>
 
+                    </datalist>
 
                     <input type="text" id="company" placeholder="enter logo" name="company" [(ngModel)]="form.logo"
                         #company="ngModel" required>

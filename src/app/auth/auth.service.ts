@@ -15,7 +15,7 @@ import { LoginForm, RegisterForm } from './auth';
 export class AuthService {
   isAuthenticated: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   login(form: LoginForm) {
 
@@ -25,7 +25,7 @@ export class AuthService {
       .then((userCredential) => {
         this.isAuthenticated = true;
         localStorage.setItem('user', JSON.stringify(userCredential))
-        this.router.navigate(['']);
+        this.router.navigate(['jobs']);
         console.log("login")
       })
       .catch((error) => {
@@ -39,7 +39,7 @@ export class AuthService {
 
   passwordMatched: boolean = true;
   register(form: RegisterForm) {
-    
+
 
     if (form.password !== form.confirm_password) {
       this.passwordMatched = false;
@@ -50,7 +50,7 @@ export class AuthService {
     createUserWithEmailAndPassword(auth, form.email, form.password)
       .then((userCredential) => {
         this.isAuthenticated = true;
-        this.router.navigate(['']);
+        this.router.navigate(['jobs']);
 
       })
       .catch((error) => {

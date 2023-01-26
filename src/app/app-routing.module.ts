@@ -5,13 +5,19 @@ import { JobformComponent } from './jobform/jobform.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { ProfilesComponent } from './profiles/profiles.component';
+import { ProfileformComponent } from './profileform/profileform.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {path: 'home',component:HomeComponent},
-  {path: '',component:JobsComponent},
-  {path: 'jobform',component:JobformComponent}
+  {path: 'jobs',component:JobsComponent},
+  {path: 'jobform',component:JobformComponent},
+  {path: 'profiles',component:ProfilesComponent},
+  {path: 'profileform',component:ProfileformComponent},
+
+
 
 ];
 
