@@ -18,11 +18,11 @@ export class ProfileComponent {
   
   }
   isRecruter(){
-    return true
+    return this.authservice.isRecruter
   }
-  recrutement(){
-    this.updateProfileList.emit();
-  }
+recrutement(){
+  
+}
   updateProfile(){
     this.router.navigate(['profileform'],{queryParams:{ id:this.profile.id}})
     this.profileService.updateProfile(this.profile)  }

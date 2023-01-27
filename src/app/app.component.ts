@@ -28,6 +28,7 @@ this.router.navigate(['home'])
 show(){
   this.isShowing=!this.isShowing;
 }
+
   logout() {
       this.isLoggedIn = false;
       this.authService.logout();

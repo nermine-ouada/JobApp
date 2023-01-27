@@ -14,7 +14,8 @@ import { LoginForm, RegisterForm } from './auth';
 })
 export class AuthService {
   isAuthenticated: boolean = false;
-
+  isApplicant:boolean=false;
+  isRecruter:boolean=false;
   constructor(private router: Router) { }
 
   login(form: LoginForm) {
@@ -28,14 +29,22 @@ export class AuthService {
         if(form.App==true){
            this.router.navigate(['jobs']);
            this.isAuthenticated = true;
+
+           this.isApplicant=true;
+           this.isRecruter=false;
+
         }
         if(form.Rec==true){
           this.router.navigate(['profiles']);
           this.isAuthenticated = true;
+
+          this.isApplicant=false;
+           this.isRecruter=true;
         }
         if(form.App==form.Rec){
           alert('choose recruter or applicant');
           this.isAuthenticated = false;
+
          }
       })
       .catch((error) => {
@@ -62,20 +71,26 @@ export class AuthService {
          if(form.App==true){
           this.router.navigate(['jobs']);
           this.isAuthenticated = true; 
+          this.isApplicant=true;
+           this.isRecruter=false;
        }
        if(form.Rec==true){
          this.router.navigate(['profiles']);
-         this.isAuthenticated = true; 
+         this.isAuthenticated = true;
+         this.isApplicant=false;
+           this.isRecruter=true;
        }
        if(form.App==form.Rec){
         alert('choose recruter or applicant')
         this.isAuthenticated = false;
+
 
        }
 
       })
       .catch((error) => {
         this.isAuthenticated = false;
+
         alert('unseccsseful register')
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -87,7 +102,7 @@ export class AuthService {
     const auth = getAuth();
     signOut(auth)
       .then(() => {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
         this.isAuthenticated = false;
         localStorage.removeItem('user');
       })
@@ -96,8 +111,5 @@ export class AuthService {
       });
   }
  
-
-
-
   
 }

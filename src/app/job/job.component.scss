@@ -19,7 +19,8 @@ li {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 8px;
-  height: 350px;
+  height: 300px;
+  max-height: max-content ;
 }
 
 button {

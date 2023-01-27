@@ -1,6 +1,7 @@
 <li>
     <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7J19VPrVwkHLjvp8ICziGAwEdPQ9cTgkmSsWluVzL3aKp4Gd8iecgs3Rm-zTsLH50Eg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7J19VPrVwkHLjvp8ICziGAwEdPQ9cTgkmSsWluVzL3aKp4Gd8iecgs3Rm-zTsLH50Eg&usqp=CAU"
+            alt="">
     </div>
     <div>
         <span> Name :</span> {{profile.name}}
@@ -19,8 +20,11 @@
 
         <span> Email : </span> <a href="mailto: {{profile.email}}">{{profile.email}}</a>
     </div>
-
-        <button (click)="recrutement()">Recrute</button><br/>
-        <button class="edit" (click)="updateProfile()">Edit profile</button><br/>
+    <ng-container ng *ngIf="isRecruter()">
+        <button (click)="recrutement()">Recrute</button><br />
+    </ng-container>
+    <ng-container ng *ngIf="!isRecruter()">
+        <button class="edit" (click)="updateProfile()">Edit profile</button><br />
         <button class="delete" (click)="deleteProfile()">Delete profile</button>
+    </ng-container>
 </li>

@@ -17,7 +17,7 @@ constructor(private authservice:AuthService, private jobsService:JobsService, pr
 
 }
 isRecruter(){
-  return true
+  return this.authservice.isRecruter
 }
 application(){
   this.updateJobList.emit();
