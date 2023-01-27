@@ -27,17 +27,16 @@
             alt="">
         <div class="content">
             <div class="txt">
-                <div>
                     <p class="text1"> Looking for expanding your team ? </p>
                     <p class="text2"> You can offer job opportunities and choose your new team members!</p>
-                </div>
+   
                 <ng-container *ngIf="isAuthenticated()">
 
-                    <div><a routerLink="/profiles">Chek Applicants</a></div>
+                    <div><a routerLink="/profiles">Find Applicants</a></div>
                 </ng-container>
                 <ng-container *ngIf="!isAuthenticated()">
 
-                    <div><a routerLink="/login">Chek Applicants</a></div>
+                    <div><a routerLink="/login">Find Applicants</a></div>
                 </ng-container>
             </div>
         </div>

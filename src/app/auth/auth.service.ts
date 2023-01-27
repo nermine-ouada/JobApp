@@ -23,17 +23,26 @@ export class AuthService {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, form.email, form.password)
       .then((userCredential) => {
-        this.isAuthenticated = true;
+        
         localStorage.setItem('user', JSON.stringify(userCredential))
-        this.router.navigate(['jobs']);
-        console.log("login")
+        if(form.App==true){
+           this.router.navigate(['jobs']);
+           this.isAuthenticated = true;
+        }
+        if(form.Rec==true){
+          this.router.navigate(['profiles']);
+          this.isAuthenticated = true;
+        }
+        if(form.App==form.Rec){
+          alert('choose recruter or applicant');
+          this.isAuthenticated = false;
+         }
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         this.isAuthenticated = false;
         alert('unseccsseful login')
-        console.log(" no login")
       })
   }
 
@@ -49,8 +58,20 @@ export class AuthService {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, form.email, form.password)
       .then((userCredential) => {
-        this.isAuthenticated = true;
-        this.router.navigate(['jobs']);
+         
+         if(form.App==true){
+          this.router.navigate(['jobs']);
+          this.isAuthenticated = true; 
+       }
+       if(form.Rec==true){
+         this.router.navigate(['profiles']);
+         this.isAuthenticated = true; 
+       }
+       if(form.App==form.Rec){
+        alert('choose recruter or applicant')
+        this.isAuthenticated = false;
+
+       }
 
       })
       .catch((error) => {

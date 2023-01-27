@@ -10,22 +10,30 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent {
 
-  form:LoginForm={
-    email:'',
-    password:'',
+  form: LoginForm = {
+    email: '',
+    password: '',
+    App:false,
+    Rec:false
 
   };
 
-  constructor(private authService:AuthService, private router:Router ) {}
+  constructor(private authService: AuthService, private router: Router) { }
+  isApplicant: boolean = false
+  isRecruter: boolean = false
 
+  submit() {
 
-submit(){
-  
-  this.authService.login(this.form);
+    this.authService.login(this.form);
   }
-  isApplicant(
-    
-  ){}
-  isRecruter(){}
+  Applicant() {
+    this.form.App=true;
+this.form.Rec=false
+  }
+
+  Recruter() {
+    this.form.App=false;
+    this.form.Rec=true;
+  }
 
 }
