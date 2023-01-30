@@ -72,7 +72,7 @@ export class AuthService {
           this.router.navigate(['jobs']);
           this.isAuthenticated = true; 
           this.isApplicant=true;
-           this.isRecruter=false;
+           this.isRecruter=false; 
        }
        if(form.Rec==true){
          this.router.navigate(['profiles']);
