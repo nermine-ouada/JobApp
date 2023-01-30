@@ -1,0 +1,26 @@
+<li>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7J19VPrVwkHLjvp8ICziGAwEdPQ9cTgkmSsWluVzL3aKp4Gd8iecgs3Rm-zTsLH50Eg&usqp=CAU"
+            alt="">
+    </div>
+    <div>
+        <span> Name :</span> {{recrutement.name}}
+    </div>
+    <div>
+        <span> Age : </span> {{recrutement.age}}
+    </div>
+    <div>
+        <span>Degree : </span> {{recrutement.degree}}
+
+    </div>
+    <div>
+        <div>
+            <span> Resume Link :</span> <a href="{{recrutement.resume}}">{{recrutement.resume}}</a>
+        </div>
+
+        <span> Email : </span> <a href="mailto: {{recrutement.email}}">{{recrutement.email}}</a>
+    </div>
+
+        <button class="delete" (click)="deleteRecrutements()">Delete Recrutemnt</button>
+  
+</li>

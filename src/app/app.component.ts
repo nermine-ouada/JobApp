@@ -12,24 +12,34 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   isLoggedIn: boolean = false;
- 
-  constructor(private authService: AuthService, private router:Router ) { }
+
+  constructor(private authService: AuthService, private router: Router) { }
   ngOnInit(): void {
 
-/* this.router.navigate(['home'])*/
-      this.isLoggedIn = localStorage.getItem('user') ? true : false;
-      initializeApp(firebaseConfig);
-}
-  
-  isAuthenticated() {
-      return this.authService.isAuthenticated;
+    //this.router.navigate(['home'])
+    
+    this.isLoggedIn = localStorage.getItem('user') ? true : false;
+    initializeApp(firebaseConfig);
   }
-  isShowing:boolean=false;
-show(){
-  this.isShowing=!this.isShowing;
-}
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated;
+  }
+  isShowing: boolean = false;
+  show() {
+    this.isShowing = !this.isShowing;
+
+  }
+
   logout() {
-      this.isLoggedIn = false;
-      this.authService.logout();
+    this.isLoggedIn = false;
+    this.authService.logout();
+  }
+  isApplicant() {
+    return this.authService.isApplicant;
+  }
+  isRecruter() {
+    return this.authService.isRecruter;
+
   }
 }

@@ -12,7 +12,9 @@ export class RegisterComponent {
   form: RegisterForm = {
     email: '',
     password: '',
-    confirm_password: ''
+    confirm_password: '',
+    App:false,
+    Rec:false
   };
   constructor(private authService:AuthService, private router:Router) { }
 
@@ -22,12 +24,13 @@ export class RegisterComponent {
 
 }
 
-  isApplicant:boolean=false;
-  applicant(){
-    this.isApplicant=true;
-    
-  }
-  recruter(){
-    this.isApplicant=false;
-  }
+Applicant() {
+  this.form.App=true;
+this.form.Rec=false
+}
+
+Recruter() {
+  this.form.App=false;
+  this.form.Rec=true;
+}
 }

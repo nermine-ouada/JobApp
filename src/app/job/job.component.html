@@ -17,8 +17,11 @@
         <span> Description :</span> {{job.description}}
     </div>
 
-
+<ng-container *ngIf="!isRecruter()">
     <button (click)="application()">Apply</button><br />
-    <button class="edit" (click)="updateJob()">Edit profile</button><br />
-    <button class="delete" (click)="deleteJob()">Delete profile</button>
+</ng-container>
+    <ng-container ng *ngIf="isRecruter()">
+    <button class="edit" (click)="updateJob()">Edit Job</button><br />
+    <button class="delete" (click)="deleteJob()">Delete Job</button>
+</ng-container>
 </li>
