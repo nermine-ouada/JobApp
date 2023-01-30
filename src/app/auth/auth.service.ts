@@ -32,7 +32,7 @@ export class AuthService {
 
            this.isApplicant=true;
            this.isRecruter=false;
-
+ 
         }
         if(form.Rec==true){
           this.router.navigate(['profiles']);
