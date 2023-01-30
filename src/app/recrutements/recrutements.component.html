@@ -1,0 +1,6 @@
+<h1>My Recrutemnts</h1>
+<ul>
+    <ng-container *ngFor="let singleRecrutement of recrutements; let i=index">
+        <app-recrutement (updateRecrutementList)="getRecrutementList()" [recrutement]="singleRecrutement"></app-recrutement>
+    </ng-container>
+</ul>

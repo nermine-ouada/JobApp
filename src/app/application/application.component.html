@@ -1,0 +1,21 @@
+<li>
+    <div>
+        <img src="{{application.logo}}" alt="{{application.company}}">
+    </div>
+    <div>
+        <span> Company : </span> {{application.company}}
+    </div>
+    <div>
+        <span> Field : </span> {{application.field}}
+    </div>
+
+
+    <div>
+        <span> Position : </span> {{application.job}}
+    </div>
+    <div>
+        <span> Description : </span> {{application.description}}
+    </div>
+
+    <button class="delete" (click)="deleteApplication()">Delete Application</button>
+</li>

@@ -103,3 +103,17 @@ padding: 0;
 div:hover{
   background-color: white;
 }
+.app{
+  background-color: #09a30e;
+  color: #065f09;
+  border-radius: 20px;
+  float: right;
+  margin: 3px;
+  background-color: #7ccb7e;
+}
+.app:hover {
+  background-color: white;
+
+  color: #0e9d13;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}

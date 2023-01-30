@@ -8,6 +8,7 @@ export interface Job {
 
   }
 
+
 export interface JobForm {
   job:string,
     company:string,

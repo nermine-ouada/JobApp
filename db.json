@@ -68,70 +68,110 @@
     },
     {
       "id": 2,
-      "name": "name1",
+      "name": "name2",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree2",
+      "email": "email2",
+      "resume": "resume2"
     },
     {
       "id": 3,
-      "name": "name1",
+      "name": "name3",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree3",
+      "email": "email3",
+      "resume": "resume3"
     },
     {
       "id": 4,
-      "name": "name1",
+      "name": "name4",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree4",
+      "email": "email4",
+      "resume": "resume4"
     },
     {
       "id": 5,
-      "name": "name1",
+      "name": "name5",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree5",
+      "email": "email5",
+      "resume": "resume5"
     },
     {
       "id": 6,
-      "name": "name1",
+      "name": "name6",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree6",
+      "email": "email6",
+      "resume": "resume6"
     },
     {
       "id": 7,
-      "name": "name1",
+      "name": "name7",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree7",
+      "email": "email7",
+      "resume": "resume7"
     },
     {
       "id": 8,
-      "name": "name1",
+      "name": "name8",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree8",
+      "email": "email8",
+      "resume": "resume8"
     },
     {
       "id": 9,
-      "name": "name1",
+      "name": "name9",
       "age": "25",
-      "degree": "degree1",
-      "email": "email1",
-      "resume": "resume1"
+      "degree": "degree9",
+      "email": "email9",
+      "resume": "resume9"
     },
     {
       "id": 10,
+      "name": "name10",
+      "age": "25",
+      "degree": "degree10",
+      "email": "email10",
+      "resume": "resume10"
+    }
+  ],
+  "my_applications": [
+    {
+      "id": 1,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "It Services",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    },
+    {
+      "id": 2,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    },
+    {
+      "id": 3,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    },
+    {
+      "id": 5,
+      "job": "developper",
+      "company": "ELYADATA",
+      "field": "IT",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUmt-LHoJlUzJgox1qv6SLBMkt5x3yLvcmfF9AUQBdQ&s"
+    }
+  ],
+  "my_recrutements": [
+    {
+      "id": 2,
       "name": "name1",
       "age": "25",
       "degree": "degree1",

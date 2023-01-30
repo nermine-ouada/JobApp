@@ -21,10 +21,4 @@ export class JobsComponent  implements OnInit {
      this.jobsService.getJobs().subscribe((jobs: any) => { this.jobs = jobs; })
    }
 
-  applications(event: Job) {
-    console.log(event)
-  }
-
-
-
 }

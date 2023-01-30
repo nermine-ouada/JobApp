@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ApplicationModule, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -15,6 +15,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileformComponent } from './profileform/profileform.component';
+import { ApplicationComponent } from './application/application.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import { RecrutementsComponent } from './recrutements/recrutements.component';
+import { RecrutementComponent } from './recrutement/recrutement.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,12 @@ import { ProfileformComponent } from './profileform/profileform.component';
     JobformComponent,
     ProfilesComponent,
     ProfileComponent,
-    ProfileformComponent
+    ProfileformComponent,
+    ApplicationComponent,
+    ApplicationsComponent,
+    RecrutementsComponent,
+    RecrutementComponent,
+   
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { ProfileformComponent } from './profileform/profileform.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import { RecrutementsComponent } from './recrutements/recrutements.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -16,6 +18,10 @@ const routes: Routes = [
   {path: 'jobform',component:JobformComponent},
   {path: 'profiles',component:ProfilesComponent},
   {path: 'profileform',component:ProfileformComponent},
+  {path: 'applications',component:ApplicationsComponent},
+  {path: 'recrutements',component:RecrutementsComponent},
+
+
 
 
 

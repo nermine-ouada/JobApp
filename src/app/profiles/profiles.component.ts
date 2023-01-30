@@ -18,12 +18,10 @@ export class ProfilesComponent  implements OnInit {
    
    getProfileList(){
    
-     this.profilesService.getProfiles().subscribe((profiles: any) => { this.profiles = profiles; })
+     this.profilesService.getProfiles().subscribe((profiles: any) => 
+     { this.profiles = profiles; })
    }
- 
-  recrutement(event: Profile) {
-    console.log(event)
-  }
+
 
 
 
