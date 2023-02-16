@@ -23,8 +23,12 @@
     <ng-container ng *ngIf="isRecruter()">
         <button (click)="recrutement()">Recrute</button><br />
     </ng-container>
-    <ng-container ng *ngIf="!isRecruter()">
-        <button class="edit" (click)="updateProfile()">Edit profile</button><br />
+    <ng-container ng *ngIf="!isRecruter() && !isApplicant()">
+        <button (click)="login()">Recrute</button><br />
+
+    </ng-container>
+    <ng-container ng *ngIf="isApplicant()">
+        <button class="edit"  (click)="updateProfile()">Edit profile</button><br />
         <button class="delete" (click)="deleteProfile()">Delete profile</button>
     </ng-container>
 </li>

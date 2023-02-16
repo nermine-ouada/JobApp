@@ -67,12 +67,12 @@ export class AuthService {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, form.email, form.password)
       .then((userCredential) => {
-         
+        localStorage.setItem('user', JSON.stringify(userCredential))
          if(form.App==true){
           this.router.navigate(['jobs']);
           this.isAuthenticated = true; 
           this.isApplicant=true;
-           this.isRecruter=false;
+           this.isRecruter=false; 
        }
        if(form.Rec==true){
          this.router.navigate(['profiles']);

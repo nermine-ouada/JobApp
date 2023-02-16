@@ -19,7 +19,7 @@ export class ApplicationsComponent implements OnInit{
 
   getApplicationsList() {
 
-    this.applicationsService.getApplications().subscribe((applications: any) => { this.applications = this.applications; });
+    this.applicationsService.getApplications().subscribe((applications: any) => { this.applications = applications; });
     
   }
 

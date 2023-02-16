@@ -1,7 +1,7 @@
 <div class="main">
   <div class="wrap">
     <img class="bg"
-    src="https://thumbs.dreamstime.com/b/top-view-worktable-accessories-business-flat-lay-background-copy-space-180807541.jpg"
+      src="https://thumbs.dreamstime.com/b/top-view-worktable-accessories-business-flat-lay-background-copy-space-180807541.jpg"
       alt="">
     <div class="content">
       <div class="full-page">
@@ -11,17 +11,18 @@
 
           <input type="password" id="pwd" placeholder="Password" [(ngModel)]="form.password" name="password"
             #password="ngModel" required>
-          <label class="rad-label">
-            <input type="radio" class="rad-input" name="job" required (click)="Recruter()">
-            <div class="rad-design"></div>
-            <div class="rad-text">recruter</div>
-          </label>
 
 
           <label class="rad-label">
             <input type="radio" class="rad-input" name="job" (click)="Applicant()" required>
             <div class="rad-design"></div>
             <div class="rad-text">applicant</div>
+          </label>
+
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="job" required (click)="Recruter()">
+            <div class="rad-design"></div>
+            <div class="rad-text">recruter</div>
           </label>
 
           <button class="submit" (click)="submit()">login</button>

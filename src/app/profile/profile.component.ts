@@ -15,11 +15,8 @@ export class ProfileComponent {
   @Input() profile:Profile={} as Profile;
   @Output()updateProfileList=new EventEmitter<null>();
   
-  constructor(private authservice:AuthService, private profileService:ProfilesService, private router:Router, private recrutementsService:RecrutementsService){
+  constructor(private authservice:AuthService, private profileService:ProfilesService, private router:Router, private recrutementsService:RecrutementsService, private authService: AuthService){
   
-  }
-  isRecruter(){
-    return this.authservice.isRecruter
   }
 recrutement(){
   this.recrutementsService.addRecruments(this.profile).subscribe();
@@ -35,6 +32,21 @@ recrutement(){
     }
   );
   
+ 
+  } 
+login(){
+  this.router.navigate(["login"]);
+}
 
+  isApplicant() {
+    return this.authService.isApplicant;
+  }
+  isRecruter() {
+    return this.authService.isRecruter;
+
+  }
+  
+  isAuthenticated() {
+    return this.authService.isAuthenticated;
   }
 }

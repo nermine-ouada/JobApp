@@ -11,14 +11,9 @@
                     <p class="text2"> Choose your field and upload your resume and miss any job offers !</p>
                 </div>
 
-                <ng-container *ngIf="isAuthenticated()">
-
+                
                     <div><a routerLink="/jobs">Apply Now</a></div>
-                </ng-container>
-                <ng-container *ngIf="!isAuthenticated()">
-
-                    <div><a routerLink="/login">Apply Now</a></div>
-                </ng-container>
+                
             </div>
         </div>
     </div>
@@ -31,14 +26,8 @@
                     <p class="text1"> Looking for expanding your team ? </p>
                     <p class="text2"> You can offer job opportunities and choose your new team members!</p>
    
-                <ng-container *ngIf="isAuthenticated()">
-
                     <div><a routerLink="/profiles">Find Applicants</a></div>
-                </ng-container>
-                <ng-container *ngIf="!isAuthenticated()">
-
-                    <div><a routerLink="/login">Find Applicants</a></div>
-                </ng-container>
+               
             </div>
         </div>
     </div>
