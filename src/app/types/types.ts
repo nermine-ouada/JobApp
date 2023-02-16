@@ -8,6 +8,15 @@ export interface Job {
 
   }
 
+  export interface JobApp {
+    job:string,
+    company:string,
+    field:string
+    logo:string
+    description:string
+  
+    }
+
 
 export interface JobForm {
   job:string,

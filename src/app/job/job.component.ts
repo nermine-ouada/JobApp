@@ -21,8 +21,11 @@ isRecruter(){
   return this.authservice.isRecruter
 }
 application(){
-  this.applicationsService.addApplications(this.job).subscribe();
-  this.updateJobList.emit();
+  console.log("ccccccccccccccccc",this.job)
+  this.applicationsService.addApplications(this.job).subscribe( data => {
+    this.updateJobList.emit();
+  });
+  
   
 }
 updateJob(){
@@ -37,5 +40,13 @@ deleteJob(){
 );
 
 
+}
+
+isApplicant(){
+  return this.authservice.isApplicant
+}
+login ()
+{
+  this.router.navigate(["login"])
 }
 }

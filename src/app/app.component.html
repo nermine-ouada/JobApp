@@ -4,27 +4,35 @@
   <li class="home"><a style="font-size: xx-large;" class="home" routerLink="/home">Home</a></li>
   <ng-container *ngIf="!isAuthenticated() && !isLoggedIn">
     <div>
-    <li style="float: right;"><a class="auth" routerLink="/login">Login</a></li>
-    <li style="float: right;"><a class="auth" routerLink="/register">Register</a></li>
- </div> </ng-container>
+      <li style="float: right;"><a class="auth" routerLink="/login">Login</a></li>
+      <li style="float: right;"><a class="auth" routerLink="/register">Register</a></li>
+    </div>
+  </ng-container>
   <ng-container *ngIf="(isAuthenticated() || isLoggedIn) ">
     <li style="float: right;"><button class="auth" id="logout" (click)="logout()">LogOut</button></li>
 
   </ng-container>
- 
+
   <ng-container *ngIf="(isAuthenticated() || isLoggedIn) && isShowing">
     <div>
       <ng-container *ngIf="isApplicant()">
-    <li style="float: right;"><a class="app" routerLink="/applications">My Applications</a></li>
+        <li style="float: right;"><a class="app" routerLink="/applications">My Applications</a></li>
       </ng-container>
       <ng-container *ngIf="isRecruter()">
-    <li style="float: right;"><a  class="app" routerLink="/recrutements">My recrutements</a></li>
-  </ng-container>
-    <li style="float: right;"><a class="auth" routerLink="/jobs">Jobs</a></li>
-    <li style="float: right;"><a class="auth" routerLink="/profiles">Profiles</a></li>
-    <li style="float: right;"><a class="auth" routerLink="/jobform" >Add Job</a></li>
-    <li style="float: right;"><a class="auth" routerLink="/profileform">Add Profile</a></li>
- </div>
+        <li style="float: right;"><a class="app" routerLink="/recrutements">My recrutements</a></li>
+      </ng-container>
+
+
+      <li style="float: right;"><a class="auth" routerLink="/jobs">Jobs</a></li>
+      <li style="float: right;"><a class="auth" routerLink="/profiles">Profiles</a></li>
+      <ng-container *ngIf="isRecruter() ">
+        <li style="float: right;"><a class="auth" routerLink="/jobform">Add Job</a></li>
+      </ng-container>
+      <ng-container *ngIf="isApplicant()">
+        <li style="float: right;"><a class="auth" routerLink="/profileform">Add Profile</a></li>
+      </ng-container>
+
+    </div>
 
   </ng-container>
 
