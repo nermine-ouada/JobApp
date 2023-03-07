@@ -104,6 +104,8 @@ export class AuthService {
       .then(() => {
         this.router.navigate(['/home']);
         this.isAuthenticated = false;
+        this.isApplicant=false;
+        this.isRecruter=false;
         localStorage.removeItem('user');
       })
       .catch((error) => {
